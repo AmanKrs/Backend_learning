@@ -1,8 +1,12 @@
-import express from "express";
+// const express =require('express')// for default and not using es6
+// require("dotenv").config();// for default and not using es6
+
+import express from "express"; //WE USES ES6 MODULE
+import "dotenv/config"; //WE USES ES6 MODULE
 
 const app = express();
 
-const port = 4000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
